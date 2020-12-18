@@ -2,6 +2,8 @@
 html, body {
     margin: 0;
     background-color: #31343d;
+    /* background-color: #111240; */
+    
   }
   
   .above-fold {
@@ -113,13 +115,24 @@ html, body {
     transition: opacity 500ms 600ms, -webkit-transform 800ms 0s;
     transition: transform 800ms 0s, opacity 500ms 600ms;
     transition: transform 800ms 0s, opacity 500ms 600ms, -webkit-transform 800ms 0s;
-    -webkit-transform: translateZ(100px) rotateY(190deg) translateX(0px);
-            transform: translateZ(100px) rotateY(190deg) translateX(0px);
+    -webkit-transform: translateZ(100px) rotateY(-190deg) translateX(0px);
+            transform: translateZ(100px) rotateY(-190deg) translateX(0px);
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
     opacity: 0.3;
   }
   
+  #present-image img{
+    pointer-events: none;
+    cursor: default;
+  }
+
+  #present-image.open img{
+    
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
   .present-box .present {
     position: absolute;
     width: 200px;
@@ -314,3 +327,29 @@ html, body {
     font-family: 'Raleway', sans-serif;
   color: #000;		
   }
+
+
+  #snow-footer{
+      z-index: -1;
+      height: 90px;
+      overflow: hidden;
+      margin-top: -90px;
+      background-image: url("../img/footer3.png");
+      background-repeat: repeat-x;
+      background-size: 40em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
